@@ -5,17 +5,36 @@
     <title>
     </title>
     <style>
+    .area {
+      background: #f58220;
+      display: block;
+      height: 400px;
+      width: 400px;
+      position: absolute;
+      opacity: .5;
+    }
+    #topleft{
+      left: 20px;
+      top: 20px;
+    }
+    #bottomleft{
+      left: 20px;
+      top: 530px;
+    }
     </style>
   </head>
   <body>
     <div class="mainmap">
-      <img id="mainimage" src="machinetool.png" usemap="#image-map">
+      <a id="topleft" class="area" href="#"></a>
+      <a id="bottomleft" class="area" href="#"></a>
+      <img src="machinetool.png">
+      <!--- <img id="mainimage" src="machinetool.png" usemap="#image-map">
       <map name="image-map">
           <area target="_blank" alt="TopLeft" title="TopLeft" href="http://www.google.com" coords="433,421,9,17" shape="rect">
           <area target="_blank" alt="BottomLeft" title="BottomLeft" href="http://www.bing.com" coords="443,513,0,895" shape="rect">
           <area target="_blank" alt="TopRight" title="TopRight" href="http://www.askjeeves.com" coords="1207,382,761,0" shape="rect">
           <area target="_blank" alt="Bottom Right" title="Bottom Right" href="http://www.duckduckgo.com" coords="958,473,1361,885" shape="rect">
-      </map>
+      </map> -->
     </div>
   </body>
 </html>
