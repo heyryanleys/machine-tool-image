@@ -14,33 +14,48 @@
       opacity: 0;
       transition-duration: .5s
     }
+
     #topleft{
       left: 20px;
       top: 20px;
     }
-    #topleft:hover{
-      opacity: .5;
-    }
+
     #bottomleft{
       left: 20px;
       top: 530px;
     }
-    #bottomleft:hover{
-      opacity: .5;
-    }
+
     #topright{
       left: 800px;
       top: 5px;
     }
-    #topright:hover{
-      opacity: .5;
-    }
+    
     #bottomright{
       left: 980px;
       top: 470px;
     }
+
+    #topleft:hover,
+    #bottomleft:hover,
+    #topright:hover,
     #bottomright:hover{
       opacity: .5;
+    }
+
+    .zoomedin{
+      display: none;
+      transition-delay: .3s
+    }
+
+    .x{
+      width: 80px;
+      height: 80px;
+      background: #f58220;
+      display: block;
+      position: absolute;
+      left: 150px;
+      top: 80px;
+      opacity: 0;
     }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -49,6 +64,13 @@
         $(".area").click(function(){
             $(".mainmap").hide();
         });
+        $("#topleft").click(function(){
+            $("#topleftmap").show();
+        });
+        $(".x").click(function(){
+            $(".zoomedin").hide();
+            $(".mainmap").show();
+        })
     });
     </script>
   </head>
@@ -58,7 +80,11 @@
       <a id="bottomleft" class="area" href="#"></a>
       <a id="topright" class="area" href="#"></a>
       <a id="bottomright" class="area" href="#"></a>
-      <img src="machinetool.png">
+      <img src="machinetool.png" />
+    </div>
+    <div id="topleftmap" class="zoomedin">
+      <a id="topleftx" class="x" href="#"></a>
+      <img src="topleftzoom.png" />
     </div>
   </body>
 </html>
