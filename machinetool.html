@@ -11,15 +11,36 @@
       height: 400px;
       width: 400px;
       position: absolute;
-      opacity: .5;
+      opacity: 0;
+      transition-duration: .5s
     }
     #topleft{
       left: 20px;
       top: 20px;
     }
+    #topleft:hover{
+      opacity: .5;
+    }
     #bottomleft{
       left: 20px;
       top: 530px;
+    }
+    #bottomleft:hover{
+      opacity: .5;
+    }
+    #topright{
+      left: 800px;
+      top: 5px;
+    }
+    #topright:hover{
+      opacity: .5;
+    }
+    #bottomright{
+      left: 980px;
+      top: 470px;
+    }
+    #bottomright:hover{
+      opacity: .5;
     }
     </style>
   </head>
@@ -27,14 +48,9 @@
     <div class="mainmap">
       <a id="topleft" class="area" href="#"></a>
       <a id="bottomleft" class="area" href="#"></a>
+      <a id="topright" class="area" href="#"></a>
+      <a id="bottomright" class="area" href="#"></a>
       <img src="machinetool.png">
-      <!--- <img id="mainimage" src="machinetool.png" usemap="#image-map">
-      <map name="image-map">
-          <area target="_blank" alt="TopLeft" title="TopLeft" href="http://www.google.com" coords="433,421,9,17" shape="rect">
-          <area target="_blank" alt="BottomLeft" title="BottomLeft" href="http://www.bing.com" coords="443,513,0,895" shape="rect">
-          <area target="_blank" alt="TopRight" title="TopRight" href="http://www.askjeeves.com" coords="1207,382,761,0" shape="rect">
-          <area target="_blank" alt="Bottom Right" title="Bottom Right" href="http://www.duckduckgo.com" coords="958,473,1361,885" shape="rect">
-      </map> -->
     </div>
   </body>
 </html>
