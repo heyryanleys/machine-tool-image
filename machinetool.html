@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>
-    </title>
-    <style>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+  </title>
+  <style>
+    #workspace {
+      font-family: Helvetica;
+      font-size: 20px;
+    }
+
     .area {
       background: #f58220;
       display: block;
@@ -12,10 +18,10 @@
       width: 400px;
       position: absolute;
       opacity: 0;
-      transition-duration: .5s
+      transition-duration: .5s;
     }
 
-    #topleft{
+    #topleft {
       left: 26px;
       top: 34px;
       border-radius: 50%;
@@ -23,17 +29,17 @@
       width: 370px;
     }
 
-    #bottomleft{
+    #bottomleft {
       left: 20px;
       top: 530px;
     }
 
-    #topright{
+    #topright {
       left: 800px;
       top: 5px;
     }
 
-    #bottomright{
+    #bottomright {
       left: 980px;
       top: 470px;
     }
@@ -41,43 +47,66 @@
     #topleft:hover,
     #bottomleft:hover,
     #topright:hover,
-    #bottomright:hover{
+    #bottomright:hover {
       opacity: .5;
     }
 
-    .zoomedin{
+    #dimimage {
+      position: absolute;
       display: none;
-      transition-delay: .3s
+      background-color: white;
+      width: 1400px;
+      height: 1000px;
+      opacity: .5;
+      transition-duration: .5s;
     }
 
-    .x{
-      width: 80px;
-      height: 80px;
-      background: #f58220;
-      display: block;
+    .zoomedin {
+      display: none;
+      transition-duration: .5s;
       position: absolute;
-      left: 150px;
-      top: 80px;
-      opacity: 0;
+      width: 900px;
+      height: 600px;
+      left: 230px;
+      top: 160px;
+      background-color: white;
+      border: 5px solid #f58220;
     }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $(".area").click(function(){
-            $(".mainmap").hide();
-        });
-        $("#topleft").click(function(){
-            $("#topleftmap").show();
-        });
-        $(".x").click(function(){
-            $(".zoomedin").hide();
-            $(".mainmap").show();
-        })
+
+    #x{
+      color: #f58220;
+      font-size:30px;
+      padding: 5px 0px 0px 7px;
+    }
+
+    #calloutbody{
+      padding: 10px 50px 50px 50px
+    }
+
+    #calloutimage{
+      text-align: center;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".area").click(function() {
+        $("#dimimage").show();
+      });
+      $("#topleft").click(function() {
+        $("#topleftcallout").show();
+      });
+      $("#x").click(function(){
+        $(".zoomedin").hide();
+        $("#dimimage").hide();
+      })
     });
-    </script>
-  </head>
-  <body>
+  </script>
+</head>
+
+<body>
+  <div id="workspace">
+    <div id="dimimage"></div>
     <div class="mainmap">
       <a id="topleft" class="area" href="#"></a>
       <a id="bottomleft" class="area" href="#"></a>
@@ -85,9 +114,21 @@
       <a id="bottomright" class="area" href="#"></a>
       <img src="machinetool.png" />
     </div>
-    <div id="topleftmap" class="zoomedin">
-      <a id="topleftx" class="x" href="#"></a>
-      <img src="topleftzoom.png" />
+
+    <div id="topleftcallout" class="zoomedin">
+      <div id="x"> x </div>
+      <div id="calloutbody">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor rutrum. Nullam in tellus elementum, interdum lorem eget, volutpat arcu. Aenean laoreet
+          mi in diam bibendum, non tincidunt quam facilisis. Suspendisse nisi erat, pharetra bibendum ipsum et, molestie luctus magna. Morbi sit amet massa sed ante ullamcorper gravida et in tortor. In tincidunt lectus porta, luctus eros non, posuere
+          metus. Aenean auctor diam non tortor vulputate accumsan. Integer nec leo ultrices, vulputate tellus in, sollicitudin arcu. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam
+          in risus porttitor, iaculis neque vitae, accumsan dolor. Vestibulum turpis quam, dignissim non commodo non, pretium vitae neque. Nulla facilisi. Ut eget lacus eget tortor rhoncus aliquet et et tortor. Nunc hendrerit turpis metus, quis rutrum
+          leo euismod sit amet. </p>
+      </div>
+      <div id="calloutimage">
+        Image
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
