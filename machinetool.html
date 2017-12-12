@@ -73,10 +73,11 @@
       border: 5px solid #f58220;
     }
 
-    #x{
+    #x1, #x2, #x3, #x4{
       color: #f58220;
       font-size:30px;
       padding: 5px 0px 0px 7px;
+      cursor: pointer;
     }
 
     #calloutbody{
@@ -96,8 +97,29 @@
       $("#topleft").click(function() {
         $("#topleftcallout").show();
       });
-      $("#x").click(function(){
-        $(".zoomedin").hide();
+      $("#bottomleft").click(function() {
+        $("#bottomleftcallout").show();
+      });
+      $("#topright").click(function() {
+        $("#toprightcallout").show();
+      });
+      $("#bottomright").click(function() {
+        $("#bottomrightcallout").show();
+      });
+      $("#x1").click(function(){
+        $("#topleftcallout").hide();
+        $("#dimimage").hide();
+      })
+      $("#x2").click(function(){
+        $("#bottomleftcallout").hide();
+        $("#dimimage").hide();
+      })
+      $("#x3").click(function(){
+        $("#toprightcallout").hide();
+        $("#dimimage").hide();
+      })
+      $("#x4").click(function(){
+        $("#bottomrightcallout").hide();
         $("#dimimage").hide();
       })
     });
@@ -116,18 +138,57 @@
     </div>
 
     <div id="topleftcallout" class="zoomedin">
-      <div id="x"> x </div>
+      <div id="x1"> x </div>
       <div id="calloutbody">
+        <p> <center><b>Top left</b></center> </p>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor rutrum. Nullam in tellus elementum, interdum lorem eget, volutpat arcu. Aenean laoreet
           mi in diam bibendum, non tincidunt quam facilisis. Suspendisse nisi erat, pharetra bibendum ipsum et, molestie luctus magna. Morbi sit amet massa sed ante ullamcorper gravida et in tortor. In tincidunt lectus porta, luctus eros non, posuere
-          metus. Aenean auctor diam non tortor vulputate accumsan. Integer nec leo ultrices, vulputate tellus in, sollicitudin arcu. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam
-          in risus porttitor, iaculis neque vitae, accumsan dolor. Vestibulum turpis quam, dignissim non commodo non, pretium vitae neque. Nulla facilisi. Ut eget lacus eget tortor rhoncus aliquet et et tortor. Nunc hendrerit turpis metus, quis rutrum
-          leo euismod sit amet. </p>
+          metus. Aenean auctor diam non tortor vulputate accumsan. </p>
       </div>
       <div id="calloutimage">
         Image
       </div>
     </div>
+
+    <div id="bottomleftcallout" class="zoomedin">
+      <div id="x2"> x </div>
+      <div id="calloutbody">
+        <p> <center><b>Bottom left</b></center> </p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor rutrum. Nullam in tellus elementum, interdum lorem eget, volutpat arcu. Aenean laoreet
+          mi in diam bibendum, non tincidunt quam facilisis. Suspendisse nisi erat, pharetra bibendum ipsum et, molestie luctus magna. Morbi sit amet massa sed ante ullamcorper gravida et in tortor. In tincidunt lectus porta, luctus eros non, posuere
+          metus. Aenean auctor diam non tortor vulputate accumsan. </p>
+      </div>
+      <div id="calloutimage">
+        Image
+      </div>
+    </div>
+
+    <div id="toprightcallout" class="zoomedin">
+      <div id="x3"> x </div>
+      <div id="calloutbody">
+        <p> <center><b>Top Right</b></center> </p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor rutrum. Nullam in tellus elementum, interdum lorem eget, volutpat arcu. Aenean laoreet
+          mi in diam bibendum, non tincidunt quam facilisis. Suspendisse nisi erat, pharetra bibendum ipsum et, molestie luctus magna. Morbi sit amet massa sed ante ullamcorper gravida et in tortor. In tincidunt lectus porta, luctus eros non, posuere
+          metus. Aenean auctor diam non tortor vulputate accumsan. </p>
+      </div>
+      <div id="calloutimage">
+        Image
+      </div>
+    </div>
+
+    <div id="bottomrightcallout" class="zoomedin">
+      <div id="x4"> x </div>
+      <div id="calloutbody">
+        <p> <center><b>Bottom Right</b></center> </p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor rutrum. Nullam in tellus elementum, interdum lorem eget, volutpat arcu. Aenean laoreet
+          mi in diam bibendum, non tincidunt quam facilisis. Suspendisse nisi erat, pharetra bibendum ipsum et, molestie luctus magna. Morbi sit amet massa sed ante ullamcorper gravida et in tortor. In tincidunt lectus porta, luctus eros non, posuere
+          metus. Aenean auctor diam non tortor vulputate accumsan. </p>
+      </div>
+      <div id="calloutimage">
+        Image
+      </div>
+    </div>
+
   </div>
 </body>
 
