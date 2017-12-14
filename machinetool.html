@@ -26,7 +26,6 @@
       background: #fff;
       display: block;
       position: absolute;
-      opacity: .9;
       /* transition-duration: .5s; */
       width: 27vw;
       height: 27vw;
@@ -34,7 +33,8 @@
       max-height: 370px;
       border: 4px solid #f58220;
       border-radius: 50%;
-      z-index: 2
+      z-index: 2;
+      cursor: pointer;
     }
 
     #topleft{
@@ -71,18 +71,18 @@
         height: 373.125px !important;
       }
 
-      h1, p{
+      .header, .circletext {
         font-size: 24.84px !important;
       }
-      h1{
+      .header{
         height: 29px !important;
         width: 220.688px !important;
         padding: 41.4px 0px 0px 151.8px !important;
       }
-      p{
+      .circletext {
         height: 174px !important;
         width: 340.844px !important;
-        padding: 0px 11.04px 0px 11.04px !important;
+        padding: 0px 11.04px 0px 20.715px !important;
       }
     }
 
@@ -115,15 +115,15 @@
          height: 129.594px !important;
        }
 
-       h1, p{
+       .header, .circletext{
          font-size: 8.64px !important;
        }
-       h1{
+       .header{
          height: 10px !important;
          width: 76.8969px !important;
          padding: 14.4px 0px 0px 52.8px !important;
        }
-       p{
+       .circletext{
          height: 60px !important;
          width: 118.578px !important;
          padding: 1.44px 3.84px 0px 7.2px !important;
@@ -145,12 +145,12 @@
       top: 35.0vw;
     }
 
-    #topleft:hover,
+  /*  #topleft:hover,
     #bottomleft:hover,
     #topright:hover,
     #bottomright:hover {
       opacity: 1;
-    }
+    } */
 
     #dimimage {
       position: absolute;
@@ -199,15 +199,16 @@
       border-radius: 50%;
       margin-top: -1.2vw;
     }
-    h1, p{
+    .header, .circletext{
       font-size: 1.8vw;
     }
-    h1{
+    .header{
       padding: 3.0vw 0vw 0vw 11.0vw;
-      margin-bottom: 0px
+      margin-bottom: 0px;
+      font-weight: bold;
     }
 
-    p {
+    .circletext {
       padding: 0vw 0.8vw 0vw 1.5vw;
       margin-top: .3vw;
       text-align: center;
@@ -257,25 +258,28 @@
     <div class="mainmap">
       <div id="topleft" class="area" href="#">
         <div id="ryantest">
-          <h1>Hello</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
+          <p class="header">Hello</p>
+          <p class="circletext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
         </div>
       </div>
       <div id="bottomleft" class="area" href="#">
         <div id="ryantest">
-          <h1>Hello</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
-        </div></div>
+          <p class="header">Hello</p>
+          <p class="circletext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
+        </div>
+      </div>
       <div id="topright" class="area" href="#">
         <div id="ryantest">
-          <h1>Hello</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
-        </div></div>
+          <p class="header">Hello</p>
+          <p class="circletext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
+        </div>
+      </div>
       <div id="bottomright" class="area" href="#">
         <div id="ryantest">
-          <h1>Hello</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
-        </div></div>
+          <p class="header">Hello</p>
+          <p class="circletext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
+        </div>
+      </div>
       <img src="machinetoolnocircle.png" class="backgroundimage" />
     </div>
     <div class="callout">
