@@ -7,8 +7,8 @@
     #workspace {
       font-family: Helvetica;
       font-size: 20px;
-      max-width: 1365px;
-      max-height: 1365px;
+      max-width: 1380px;
+      max-height: 1380px;
       min-width: 480px;
       min-height: 480px;
     }
@@ -16,8 +16,8 @@
     .backgroundimage{
       position: absolute;
       width: 100%;
-      max-width: 1365px;
-      max-height: 1365px;
+      max-width: 1380px;
+      max-height: 1380px;
       min-width: 480px;
       min-height: 480px;
     }
@@ -42,16 +42,91 @@
       top: 2.4vw;
     }
 
-   @media all and (min-width: 1365px) {
+   @media all and (min-width: 1380px) {
+     #topleft,
+     #bottomleft,
+     #topright,
+     #bottomright{
+        height: 372.594 !important;
+        width: 372.594 !important;
+      }
       #topleft{
-          left: 28.5px;
-          top: 33.5px;
+        left: 28.5px !important;
+        top: 33.5px !important;
+      }
+      #bottomleft{
+        left:15.18px !important;
+        top: 532.68px !important;
+      }
+      #topright{
+        left: 808.68px !important;
+        top: 13.8px !important;
+      }
+      #bottomright{
+        left: 979.8px !important;
+        top: 483px !important
+      }
+      #ryantest{
+        width: 372.594px !important;
+        height: 373.125px !important;
+      }
+
+      h1, p{
+        font-size: 24.84px !important;
+      }
+      h1{
+        height: 29px !important;
+        width: 220.688px !important;
+        padding: 41.4px 0px 0px 151.8px !important;
+      }
+      p{
+        height: 174px !important;
+        width: 340.844px !important;
+        padding: 0px 11.04px 0px 11.04px !important;
       }
     }
 
     @media all and (max-width: 480px) {
+      #topleft,
+      #bottomleft,
+      #topright,
+      #bottomright{
+        width: 129.594px !important;
+        height: 129.594px !important;
+       }
        #topleft{
+         left: 8.16px !important;
+         top: 11.52px !important;
+       }
+       #bottomleft{
+         left: 5.28px !important;
+         top: 185.28px !important;
+       }
+       #topright{
+         left: 281.28px !important;
+         top: 4.8px !important;
+       }
+       #bottomright{
+         left: 340.8px !important;
+         top: 168px !important
+       }
+       #ryantest{
+         width: 129.594px !important;
+         height: 129.594px !important;
+       }
 
+       h1, p{
+         font-size: 8.64px !important;
+       }
+       h1{
+         height: 10px !important;
+         width: 76.8969px !important;
+         padding: 14.4px 0px 0px 52.8px !important;
+       }
+       p{
+         height: 60px !important;
+         width: 118.578px !important;
+         padding: 1.44px 3.84px 0px 7.2px !important;
        }
      }
 
@@ -79,7 +154,7 @@
 
     #dimimage {
       position: absolute;
-      display: none;
+      display: block;
       background-color: white;
       width: 1400px;
       height: 1000px;
@@ -119,7 +194,10 @@
     }
 
     #ryantest{
-
+      width: 27vw;
+      height: 27vw;
+      border-radius: 50%;
+      margin-top: -1.2vw;
     }
     h1, p{
       font-size: 1.8vw;
@@ -181,11 +259,23 @@
         <div id="ryantest">
           <h1>Hello</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
-          </div>
+        </div>
       </div>
-      <div id="bottomleft" class="area" href="#"></div>
-      <div id="topright" class="area" href="#"></div>
-      <div id="bottomright" class="area" href="#"></div>
+      <div id="bottomleft" class="area" href="#">
+        <div id="ryantest">
+          <h1>Hello</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
+        </div></div>
+      <div id="topright" class="area" href="#">
+        <div id="ryantest">
+          <h1>Hello</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
+        </div></div>
+      <div id="bottomright" class="area" href="#">
+        <div id="ryantest">
+          <h1>Hello</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo nulla quis risus tincidunt, at aliquam massa ultricies. Nam interdum ex nec diam auctor.
+        </div></div>
       <img src="machinetoolnocircle.png" class="backgroundimage" />
     </div>
     <div class="callout">
